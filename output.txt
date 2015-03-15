@@ -1,2 +1,0 @@
-22 serialization::archive 11 0 0 0 0 8 test.txt 0 0 9 16 C:\test\test.txt
-22 serialization::archive 11 0 0 0 0 8 test.txt 0 0 9 22 C:\test\test1\test.txt
