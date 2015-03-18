@@ -7,10 +7,11 @@
 #include <boost/serialization/serialization.hpp>
 #include <boost/archive/text_oarchive.hpp>
 #include <boost/archive/text_iarchive.hpp>
-
+#include "sha256.h"
 //#include "md5.h"
 
 using namespace std;
+
 using namespace boost::filesystem;
   class A{
         private:
@@ -63,20 +64,23 @@ using namespace boost::filesystem;
                         ar & a_;
                         ar & b_;
                         ar & d_;
+						ar & c_;
                 }
         
                 A a_;
                 B b_;
                 string d_;
+				A c_;
         
         public:
                 C(){  std::cout << "C constructed" << std::endl; }
-                C(std::string a,int b, string d ): a_(a), b_(b), d_(d) { std::cout << "C constructed with 'd' == " << d << std::endl; }
+                C(std::string a,int b, string d,string c ): a_(a), b_(b), d_(d),c_(c) { std::cout << "C constructed with 'd' == " << d << std::endl; }
                 void print()
                 {
                         std::cout << "d == " << d_ << std::endl;
                         a_.print();
                         b_.print();
+						c_.print();
                 }
         };
 
@@ -97,6 +101,18 @@ path main_path_get(){
 	}
 	return p;
 } 
+string sha256constructor(path p){
+ifstream o;
+
+o.open(p.string(),ifstream::in);
+				string text;
+				while(!o.eof()){
+				text+=o.get();
+				}
+string a=sha256(text);
+o.close();
+return a;
+};
 
 void dir_runner(path main_p){
 	ofstream o("output.txt");
@@ -107,7 +123,7 @@ void dir_runner(path main_p){
 		if (is_regular_file(*dir_itr)){
 				path p = *dir_itr;
 				cout << "create a class:" << std::endl;
-                C c(p.filename().string(), file_size(p), p.string());
+                C c(p.filename().string(), file_size(p), p.string(),sha256constructor(p));
 				boost::archive::text_oarchive oa(o);
 				oa << c;
 				

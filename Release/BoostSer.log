@@ -1,11 +1,14 @@
-﻿Построение начато 16.03.2015 1:02:44.
+﻿Построение начато 18.03.2015 22:31:23.
      1>Проект "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\BoostSer\BoostSer.vcxproj" в узле 2 (целевые объекты build).
      1>InitializeBuildStatus:
-         Обращение к "Release\BoostSer.unsuccessfulbuild".
+         Создание "Release\BoostSer.unsuccessfulbuild", так как было задано "AlwaysCreate".
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\boost\include\boost-1_57" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt source1.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\boost\include\boost-1_57" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt sha256.cpp source1.cpp
+         sha256.cpp
+     1>sha256.cpp(130): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371): см. объявление "sprintf"
          source1.cpp
-     1>source1.cpp(110): warning C4244: аргумент: преобразование "uintmax_t" в "int", возможна потеря данных
+     1>source1.cpp(126): warning C4244: аргумент: преобразование "uintmax_t" в "int", возможна потеря данных
      1>C:\boost\include\boost-1_57\boost/mpl/print.hpp(52): warning C4308: отрицательная целая константа преобразована в тип без знака
                  C:\boost\include\boost-1_57\boost/serialization/static_warning.hpp(93): см. ссылку на создание экземпляров класса шаблон при компиляции "boost::mpl::print<T>"
                  with
@@ -47,14 +50,15 @@
                      Archive=boost::archive::text_oarchive,
                      T=C
                  ]
-                 source1.cpp(112): см. ссылку на создание экземпляров функции шаблон при компиляции "Archive &boost::archive::detail::interface_oarchive<Archive>::operator <<<C>(T &)"
+                 source1.cpp(128): см. ссылку на создание экземпляров функции шаблон при компиляции "Archive &boost::archive::detail::interface_oarchive<Archive>::operator <<<C>(T &)"
                  with
                  [
                      Archive=boost::archive::text_oarchive,
                      T=C
                  ]
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Release\BoostSer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\boost\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\BoostSer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Release\BoostSer.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Release\BoostSer.lib" /MACHINE:X86 Release\source1.obj
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Release\BoostSer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\boost\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\BoostSer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Release\BoostSer.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Release\BoostSer.lib" /MACHINE:X86 Release\sha256.obj
+         Release\source1.obj
             Создается библиотека C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Release\BoostSer.lib и объект C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\BoostSer\Release\BoostSer.exp
          Создание кода
          Создание кода завершено
@@ -68,4 +72,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:02.70
+Затраченное время: 00:00:04.98
