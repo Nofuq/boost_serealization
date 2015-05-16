@@ -1,5 +1,5 @@
-﻿Build started 16.05.2015 2:55:45.
-     1>Project "C:\Users\goshu_000\Documents\Visual Studio 2013\Projects\boost_serialization\boost_serialization\boost_serialization.vcxproj" on node 2 (Build target(s)).
+﻿Build started 16.05.2015 12:20:18.
+     1>Project "c:\Users\goshu_000\documents\visual studio 2013\Projects\Boost_serialization\Boost_serialization\Boost_serialization.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\boost\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt sha256.cpp source1.cpp
          sha256.cpp
@@ -7,14 +7,14 @@
      1>source1.cpp(143): warning C4018: '<' : signed/unsigned mismatch
      1>source1.cpp(146): warning C4018: '<' : signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\goshu_000\Documents\Visual Studio 2013\Projects\boost_serialization\Release\boost_serialization.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\boost\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\goshu_000\Documents\Visual Studio 2013\Projects\boost_serialization\Release\boost_serialization.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\goshu_000\Documents\Visual Studio 2013\Projects\boost_serialization\Release\boost_serialization.lib" /MACHINE:X86 /SAFESEH Release\sha256.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\goshu_000\documents\visual studio 2013\Projects\Boost_serialization\Release\Boost_serialization.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\boost\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\goshu_000\documents\visual studio 2013\Projects\Boost_serialization\Release\Boost_serialization.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\goshu_000\documents\visual studio 2013\Projects\Boost_serialization\Release\Boost_serialization.lib" /MACHINE:X86 /SAFESEH Release\sha256.obj
          Release\source1.obj
-            Creating library C:\Users\goshu_000\Documents\Visual Studio 2013\Projects\boost_serialization\Release\boost_serialization.lib and object C:\Users\goshu_000\Documents\Visual Studio 2013\Projects\boost_serialization\Release\boost_serialization.exp
+            Creating library c:\users\goshu_000\documents\visual studio 2013\Projects\Boost_serialization\Release\Boost_serialization.lib and object c:\users\goshu_000\documents\visual studio 2013\Projects\Boost_serialization\Release\Boost_serialization.exp
          Generating code
          Finished generating code
-         boost_serialization.vcxproj -> C:\Users\goshu_000\Documents\Visual Studio 2013\Projects\boost_serialization\Release\boost_serialization.exe
-     1>Done Building Project "C:\Users\goshu_000\Documents\Visual Studio 2013\Projects\boost_serialization\boost_serialization\boost_serialization.vcxproj" (Build target(s)).
+         Boost_serialization.vcxproj -> c:\users\goshu_000\documents\visual studio 2013\Projects\Boost_serialization\Release\Boost_serialization.exe
+     1>Done Building Project "c:\Users\goshu_000\documents\visual studio 2013\Projects\Boost_serialization\Boost_serialization\Boost_serialization.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.30
+Time Elapsed 00:00:10.65

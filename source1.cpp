@@ -92,7 +92,7 @@ string sha256constructor(path p){
 	return a;
 };
 path file_path_get(){
-	cout << "Enter csv File path" << endl;
+	cout << "Enter File path" << endl;
 	path p;
 	string s;
 	getline(cin, s);
@@ -109,7 +109,7 @@ path file_path_get(){
 
 void dir_runner(){
 	path fpth;
-	cout << "1:Make csv file" << endl;
+	cout << "1:Make file" << endl;
 	cout << "2:Scan for changes" << endl;
 	int inp;
 	cin >> inp;
@@ -122,14 +122,14 @@ void dir_runner(){
 	{
 		if (is_regular_file(*dir_itr)){
 			path p = *dir_itr;
-			if (p.filename().string() != "output.txt"){
+			
 				string name = p.filename().string();
 				string size = to_string(file_size(p));
 				string path = p.string();
 				string hash = sha256constructor(p);
 				filexs.push_back(Filex(name, size, path, hash));
 
-			}
+			
 		}
 	}
 	

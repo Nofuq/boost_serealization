@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source1.cpp">
+    <ClCompile Include="sha256.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sha256.cpp">
+    <ClCompile Include="source1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
